@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string.h>
 #include <vector>
 using namespace std;
 
@@ -58,5 +59,34 @@ int main()
 		cout << vec[i] << endl;
 	}*/
 
+	//char str[] = { "helloworld" };
+	////const char* p = "helloworld";
+	//char* p = str;
 
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	str[i] ++;
+	//}
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	cout << str[i] << endl;
+	//}
+	//
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	p[i] ++;
+	//}
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	cout << p[i] << endl;
+	//}
+
+	//cout << strlen(str) << endl;
+	//cout << sizeof(str) << endl;
+
+	char str[20] = { "helloworld" };
+	char str2[] = { "saybay" };
+
+	strcat_s(str, strlen(str) + strlen(str2) + 1, str2);
+	cout << str << endl;
 }
